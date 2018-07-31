@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap_Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        #nav li{
+            min-width: 90px;
+            text-align: center;
+            border-top:3px solid transparent;
+            border-bottom:3px solid transparent;
+        }
+
+        #nav li a{
+            color: white;
+        }
+
+        #nav li:hover{
+            border-top:3px solid darkviolet;
+            border-bottom:3px solid darkviolet;
+        }
+
+        #nav li:hover a{
+            color:lightskyblue;
+        }
+
+        .mainButton{
+            border-radius: 30px;
+            height: 50px;
+            min-width: 160px;
+            min-height: 60px;
+            padding: 0px 0px;
+            line-height: 50px;
+            background-color: lightskyblue;
+            color: white;
+            border: none;
+            font-size: 22px;
+            font-family: "Microsoft YaHei UI";
+            top: 390px;
+            position: absolute;
+            width: 14%;
+            left: 43%;
+            letter-spacing: 2px;
+        }
+    </style>
+    <style>
+        body{
+            background-color:white;
+        }
+
+        h2.myspace{
+            padding-left: 100px;
+            padding-bottom: 10px;
+            color: black;
+        }
+        div.user_info{
+            text-align: left;
+            font-size: 18px;
+        }
+
+        #leftnav li{
+            margin: 0;
+            padding: 0;
+            min-width: 90px;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        #leftnav li a{
+            color: black;
+        }
+
+        #leftnav li a:hover{
+            background-color: black;
+        }
+
+        #leftnav li:hover a{
+            color:white;
+        }
+
+
+
+    </style>
+    <style>
+        .demo{margin-top: 30px;}
+        a:hover,a:focus{
+            text-decoration: none;
+            outline: none;
+        }
+        #accordion .panel{
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            margin-top: 0;
+        }
+        #accordion .panel-heading{
+            padding: 0;
+            border-radius: 0;
+            border: none;
+        }
+        #accordion .panel-title a{
+            /*展开时*/
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            padding: 15px 48px 15px 20px;
+            background: gainsboro;
+            position: relative;
+            transition: all 0.3s ease 0s;
+        }
+        #accordion .panel-title a.collapsed{
+            /*折叠时*/
+            color: black;
+            background: gainsboro;
+            border-bottom: 1px solid #3d3537;
+        }
+        #accordion .panel-title a:after,
+        #accordion .panel-title a.collapsed:after{
+            content: "";
+            display: block;
+            width: 3px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 30px;
+            background: white;
+        }
+        #accordion .panel-title a.collapsed:after{
+            background: black;
+        }
+        #accordion .panel-title a:before,
+        #accordion .panel-title a.collapsed:before{
+            /*content: "\f068";*/
+            font-family: FontAwesome;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 50%;
+            background: #f7c59f;
+            position: absolute;
+            top: 12px;
+            right: 19px;
+            font-size: 14px;
+            color: #e16b47;
+            text-align: center;
+            z-index: 1;
+        }
+        #accordion .panel-title a.collapsed:before{
+            /*折叠起来的样式*/
+            content: "\f067";
+            color: black;
+            background: white;
+        }
+        #accordion .panel-body{
+            /*内容*/
+            background: whitesmoke;
+            color: black;
+            padding: 20px 50px 15px 20px;
+            line-height: 25px;
+            border: none;
+            position: relative;
+        }
+        #accordion .panel-body:after{
+            display: block;
+            width: 3px;
+            height: 100%;
+            background: whitesmoke;
+            position: absolute;
+            top: 0;
+            right: 30px;
+        }
+    </style>
+
+</head>
+<body>
+<!---->
+<div class="col-xs-12 col-md-12" style="padding: 0;position: relative;background-color: black;"> <!--positon:relative-->
+    <img src="./pic/trust.ico" class="img-responsive" alt="Cinque Terre" style="max-width: 9%;display: inline-block;margin-left: 8%;margin-top: -48px">
+
+    <nav class="navbar navbar-inverse" style="background-color: transparent;border-color: transparent;display: inline-block;min-height: 80px;margin-top: 20px;min-width: 80%;min-height: 30px;margin-top: 5px;margin-bottom: 0">
+        <div class="container-fluid" style="width: 100%">
+            <div class="collapse navbar-collapse" id="leftnavbar" style="display: inline-block;font-size: 16px;width: 100%">
+                <ul class="nav navbar-nav" id="nav" style="width: 100%">
+                    <li><a href="./homepage.html" style="color: darkviolet">首页</a></li>
+                    <li><a href="./invest.html">投资</a></li>
+                    <li><a href="./loan.html">借款</a></li>
+                    <li><a href="./guide.html">教程</a></li>
+                    <li style="float: right;"><a href="./signup.html">注册</a></li>
+                    <li style="float: right;"><a href="./login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="col-xs-12 col-md-12" style="padding: 0;position: relative;">
+    <h2 class="myspace">个人中心</h2>
+</div>
+
+<div class="col-xs-12 col-md-12" style="padding: 0;position: relative;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-md-2">
+                <div>
+                    <ul id ="leftnav" class="nav nav-sidebar">
+                        <li><a href="./User_Main.html">个人信息</a></li>
+                        <li><a href="./User_Favorite.html">我的收藏</a></li>
+                        <li class="active" style="color: darkviolet"><a href="./User_Rrecently.html">最近项目</a></li>
+                        <li><a href="./User_History.html">历史统计</a></li>
+                        <li><a href="./User_Check.html">信用验证</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-10" style="background-color: whitesmoke;">
+                <div>
+                    <h2>最近项目</h2><br/>
+                    <p>
+                        这是一个显示最近项目的页面
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
