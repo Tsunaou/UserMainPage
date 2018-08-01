@@ -45,8 +45,8 @@ div.myspace{
 /*----------左侧导航栏样式-------------*/
 div.leftsidenav{
     /*position: fixed;
-    width: 15%;
-    z-index: 1;*/
+    width: 15%;*/
+    z-index: 1;
 }
 
 #leftnav li{
