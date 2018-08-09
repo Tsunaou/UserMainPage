@@ -2,17 +2,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>NJU_Trust 个人中心 个人信息</title>
+    <title>NJU_Trust 个人中心 我的收藏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/user.css">
-
-    <script type="text/javascript">
-        $(function(){$('#collapseOne').collapse('show')});
-        $(function(){$('#collapseTwo').collapse('show')});
-    </script>
 
 </head>
 <body>
@@ -39,7 +34,7 @@
 <div class="col-xs-12 col-md-12" style="padding: 0;position: relative;">
     <div class="myspace">
         <h2 class="myspace">个人中心</h2>
-        <!--<p class="lead">在此处，你可以查看个人财务统计和收藏情况，并进行信用验证</p>-->
+        <p>在此处，你可以查看个人财务统计和收藏情况，并进行信用验证</p>
     </div>
 </div>
 
@@ -49,28 +44,52 @@
             <div style="height: 50px">
                 <!--纯粹占个位置。。-->
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-2">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="leftsidenav">
-                    <ul id ="leftnav" class="nav nav-sidebar">
-                        <li class="list-group-item active"><a href="./User_Main.html"><h4>个人信息</h4></a></li>
-                        <li class="list-group-item"><a href="./User_Favorite.html"><h4>我的收藏</h4></a></li>
-                        <li class="list-group-item"><a href="./User_Rrecently.html"><h4>最近项目</h4></a></li>
-                        <li class="list-group-item"><a href="./User_History.html"><h4>历史统计</h4></a></li>
-                        <li class="list-group-item"><a href="./User_Check.html"><h4>信用验证</h4></a></li>
-                    </ul>
+                    <div class="left_menus">
+                        <p class="left_head" style="margin-top: 10px"><b>个人信息</b></p><hr/>
+                        <ul class="left_ul">
+                            <li><a href="#" class="active">基本信息</a></li>
+                            <li><a href="#l">财务分析</a></li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="left_menus">
+                        <p class="left_head"><b>我的项目</b></p><hr/>
+                        <ul class="left_ul">
+                            <li><a href="#">最近项目</a></li>
+                            <li><a href="#">收藏项目</a></li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="left_menus">
+                        <p class="left_head"><b>历史统计</b></p><hr/>
+                        <ul class="left_ul">
+                            <li><a href="#">历史融资</a></li>
+                            <li><a href="#">历史投资</a></li>
+                            <li><a href="#">历史统计</a></li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="left_menus">
+                        <p class="left_head"><b>信用验证</b></p><hr/>
+                        <ul class="left_ul">
+                            <li><a href="#">普通验证</a></li>
+                            <li><a href="#">校友验证</a></li>
+                            <li><a href="#">交叉验证</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-10 col-md-10" id ="mainbody" >
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
+            <div class="col-xs-12 col-sm-9 col-md-9" id ="mainbody" >
+                <div class="panel-group">
+                    <div class="panel panel-default" id="mainpanel">
+                        <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    基本信息
-                                </a>
+                                基本信息
                             </h4>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div>
                             <div class="panel-body">
                                 <div class="row placeholders">
                                     <div class="col-xs-12 col-sm-9 placeholder">
@@ -81,26 +100,39 @@
                                                     <tr>
                                                         <th>用户名</th>
                                                         <td>UserName</td>
+                                                    </tr>
+                                                    <tr>
                                                         <th>性别</th>
                                                         <td>男</td>
                                                     </tr>
                                                     <tr>
                                                         <th>账户等级</th>
                                                         <td>高级账号</td>
+                                                    </tr>
+                                                    <tr>
                                                         <th>手机号</th>
                                                         <td>12345678910</td>
                                                     </tr>
                                                     <tr>
                                                         <th>邮箱</th>
                                                         <td>123456789@126.com</td>
+                                                    </tr>
+                                                    <tr>
                                                         <th>注册时间</th>
                                                         <td>2018/7/27</td>
                                                     </tr>
                                                     <tr>
                                                         <th>年级</th>
                                                         <td>大二</td>
+                                                    </tr>
+                                                    <tr>
+
                                                         <th>专业</th>
                                                         <td>临床医学</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>支付宝账号</th>
+                                                        <td>123456789@126.com</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -116,28 +148,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    财务分析
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                <img src="pic/charts.png" class="img-responsive">
-                                <img src="pic/charts.png" class="img-responsive">
-                                <img src="pic/charts.png" class="img-responsive">
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="col-xs-12 col-md-12" style="padding: 0;position: relative;background-color: black;margin-top: 5%;">
+        <h2 class="myspace" style="text-align: right">页尾用于测试 Copyright@Tsunaou</h2>
+</div>
 </body>
 </html>
